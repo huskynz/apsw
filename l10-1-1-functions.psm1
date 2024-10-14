@@ -16,7 +16,7 @@ function is_odd {
     param (
         [int]$number
     )
-    return -not ($number % 2) -ne 0
+    return -not ($number % 2) -ne 1
 }
 
 function is_punctuated_correctly {
@@ -35,5 +35,3 @@ function starts_with_capital {
 
     return ($usr_sentence.Length -gt 0) -and ($usr_sentence[0] -cmatch '[A-Z]')
 }
-
-
